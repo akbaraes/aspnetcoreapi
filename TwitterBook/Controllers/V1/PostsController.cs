@@ -42,7 +42,7 @@ namespace TwitterBook.Controllers.V1
         public async Task<IActionResult> GetAll([FromRoute] Guid postId)
         {
 
-            var ownsPost = await postService.CheckUserOwnPost(postId, HttpContext.GetUserId());
+           // var ownsPost = await postService.CheckUserOwnPost(postId, HttpContext.GetUserId());
 
             if (!ownsPost)
                 return BadRequest(new { Error = "Your not owns this post" });

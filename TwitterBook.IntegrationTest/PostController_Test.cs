@@ -16,7 +16,7 @@ namespace TwitterBook.IntegrationTest
         [Fact]
         public async Task GetAll_ShouldRetuenEmptyValue()
         {
-            await SetAuthenticateKey();
+            SetAuthenticateKey();
 
             var response = await TestClient.GetAsync(APIRoute.Post.GetAll);
 

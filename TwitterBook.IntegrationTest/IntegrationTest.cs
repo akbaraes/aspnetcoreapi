@@ -30,7 +30,7 @@ namespace TwitterBook.IntegrationTest
         }
 
 
-        protected async Task SetAuthenticateKey()
+        protected  void SetAuthenticateKey()
         {
             //AuthResponse authResponse = await DoLogin();
             string token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiIwNmM0YTcyNC1kYTQ2LTQzNGEtODg5Zi03NTdmNTliOGVlOTYiLCJyb2xlIjoiQWRtaW4sRWRpdG9yIiwiZW1haWwiOiJha2Jhcmppbm5hLm1AZ21haWwuY29tIiwibmJmIjoxNTg2NTE0MjE0LCJleHAiOjE2MTgwNTAyMTMsImlhdCI6MTU4NjUxNDIxNH0.Rg2hPW1ohr2jPMDngTQFfVeIvlfTxreH0PXnkiNeSng";
