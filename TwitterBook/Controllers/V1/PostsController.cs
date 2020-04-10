@@ -33,7 +33,10 @@ namespace TwitterBook.Controllers.V1
 
             return Ok(await postService.GetPosts());
         }
-
+        /// <summary>
+        /// Return all Posts
+        /// </summary>
+        /// <param name="postId"></param>
         [HttpGet(APIRoute.Post.Get)]
         [Authorize(Policy = "WorkForCompanyRequirement")]
         public async Task<IActionResult> GetAll([FromRoute] Guid postId)
